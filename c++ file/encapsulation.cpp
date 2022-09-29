@@ -1,0 +1,5 @@
+/*
+Binding of data and fxn. together
+mainly for the objects
+
+*/

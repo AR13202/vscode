@@ -1,0 +1,45 @@
+.a1{
+	text-align: center;
+}
+.a2{
+	text-align: right;
+}
+#i1{
+	color: red;
+}
+#i2{
+	color: blue;
+}
+#i3{
+	color: purple;
+}
+#i4{
+	color: green;
+}
+div{
+	background-color: red;
+}
+span{
+	background-color: blue;
+}
+.box{
+	margin: 20px;
+	padding: 5px;
+	background-color: red;
+}
+.box1{
+	height: 5px;
+	width: 50px;
+	display: block;
+}
+.box2{
+	height: 8px;
+	width: 8px;
+	display: flex;
+	visibility: hidden;
+}
+.box3{
+	height: 40px;
+	width: 90px;
+	display: inline;
+}

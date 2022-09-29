@@ -1,0 +1,34 @@
+.x {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    padding: 20px;
+    margin: 20px;
+}
+
+.a {
+    transition: width 2s;
+}
+
+.a:hover {
+    width: 300px;
+}
+
+.b {
+    transition-duration: 2s;
+}
+
+.b:hover {
+    width: 200px;
+    height: 300px;
+}
+
+.c {
+    transition: width 2s, height 2s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.c:hover {
+    width: 300px;
+    height: 300px;
+}

@@ -1,0 +1,97 @@
+.a {
+    animation-name: abc;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes abc {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+.b {
+    animation-name: ab;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 3;
+    animation-timing-function: ease-in-out;
+    position: relative;
+    background-color: dodgerblue;
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes ab {
+    0% {
+        background-color: dodgerblue;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: lightblue;
+        top: 0px;
+        left: 300px;
+    }
+    50% {
+        background-color: whitesmoke;
+        top: 0px;
+        left: 600px;
+    }
+    75% {
+        background-color: lightblue;
+        top: 0px;
+        left: 300px;
+    }
+    100% {
+        background-color: dodgerblue;
+        left: 0px;
+        top: 0px;
+    }
+}
+
+.c {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-iteration-count: 3;
+    animation-duration: 4s;
+}
+
+@keyframes example {
+    0% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        left: 200px;
+        top: 0px;
+    }
+    50% {
+        background-color: blue;
+        left: 200px;
+        top: 200px;
+    }
+    75% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}

@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 200px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.a {
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    border: 1px solid black;
+}
+
+.b {
+    width: 165px;
+    height: 60px;
+    background-color: red;
+    border: 1px solid black;
+    grid-column: 1/span 2;
+}
+
+.c {
+    width: 60px;
+    height: 135px;
+    background-color: red;
+    border: 1px solid black;
+    grid-row: 2/span 3;
+}
+
+.d {
+    grid-column-start: 2;
+}
+
+.e {
+    width: 165px;
+    height: 30px;
+    background-color: red;
+    border: 1px solid black;
+    grid-column: 1/span 2;
+}

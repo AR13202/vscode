@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .grid-container {
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 15px;
+    grid-column-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.grid {
+    height: 270px;
+    width: 270px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #EDEDED;
+    overflow: hidden;
+}
+
+.grid-head {
+    border-radius: 20px 20px 0px 0px;
+    height: 60px;
+    padding-top: 15px;
+    font-size: 30px;
+    text-align: center;
+    color: whitesmoke;
+    background-color: rgb(39, 76, 119);
+}
+
+.grid-content {
+    margin-top: 15px;
+    overflow: hidden;
+}
+
+.grid-content-items {
+    margin-left: 25px;
+    font-size: 20px;
+    color: slategrey;
+    position: relative;
+    overflow: hidden;
+}
+
+input[type=checkbox]:checked+label {
+    color: lightgrey;
+    text-decoration: line-through;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Add Task</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Task</h4>
+        </div>
+        <div class="modal-body">
+          <form id="myform">
+            <input type="text" id="gettaskhead" placeholder="add task"> 
+          </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="gettask()">submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Add Task Items</h4>
+        </div>
+        <div class="modal-body">
+          <form id="myform2">
+            <input type="text" placeholder="add task items"> 
+          </form>
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" onclick="getitems()">submit</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="grid-container" id="abc">
+  </div>
+<script type="text/javascript" src="modal.js"></script>
+</body>
+</html>

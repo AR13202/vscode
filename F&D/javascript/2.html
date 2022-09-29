@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>js</title>
+</head>
+
+<body>
+</body>
+<script>
+    var year = 2002;
+    if (year % 400 == 0) {
+        console.log("leap year");
+    } else if (year % 100 == 0) {
+        console.log("not a leap year");
+    } else if (year % 4 == 0) {
+        console.log("leap year");
+    } else {
+        console.log("not a leap year");
+    }
+    var a = 123456789;
+    var b = 0;
+    while (a > 0) {
+        b = b + (Math.trunc(a) % 10);
+        a = Math.trunc(a) / 10;
+        Math.trunc(a);
+    }
+    console.log(b);
+    var q = 0;
+    var e = 1;
+    console.log("fibonacci series: ")
+    console.log(q);
+    console.log(e);
+    for (var i = 0; i < 10; i++) {
+        var c = e;
+        e += q;
+        q = c;
+        console.log(e);
+    }
+    var month = 7;
+    console.log("no. of days in a month: ");
+    switch (month) {
+        case 1:
+            console.log(31);
+            break;
+        case 2:
+            console.log(28);
+            break;
+        case 3:
+            console.log(31);
+            break;
+        case 4:
+            console.log(30);
+            break;
+        case 5:
+            console.log(31);
+            break;
+        case 6:
+            console.log(30);
+            break;
+        case 7:
+            console.log(31);
+            break;
+        case 8:
+            console.log(31);
+            break;
+        case 9:
+            console.log(30);
+            break;
+        case 10:
+            console.log(31);
+            break;
+        case 11:
+            console.log(30);
+            break;
+        case 12:
+            console.log(31);
+            break;
+        default:
+            console.log("incorrect input");
+    }
+</script>
+
+</html>

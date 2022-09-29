@@ -1,0 +1,142 @@
+method 1 : tracing tree
+method 2 : Substitution method
+method 3 : master Theorem/formulae method
+
+METHOD 1:-->
+    void test(int n){
+        if(n>0){
+            printf("/d",n);  --- excute only 1 time(1)
+            test(n-1); --- t(n-1)
+        }
+    }
+    tracing tree
+        Test(3)  --- 1
+          /\
+        3   test(2)  ---2
+              /\
+            2   test(1)  --- 3
+                  /\
+                1  test(0)
+    number of levels 3 that is equal to n ==> Time Complexity = O(n);
+
+    Recurence Relation ==> 
+        T(n) = {
+            1 , n==0
+            n+1 , n>0 || T(n-1)+1,n>0 (both are correct)
+        }
+    
+
+METHOD 2:--->
+    Substituion method
+
+    T(n) = T(n-1)+1 (in above fxn.)
+
+    Substitute T(n-1):
+    T(n) = [T(n-2)+1]+1
+    T(n) = T(n-2)+2                 t(n-1)= t(n-2)+1, t(n-2) = t(n-2)+1;
+    T(n) = [T(n-3)+1]+2]
+    T(n) = T(n-3)+3
+        continues for k times-->
+    T(n) = T(n-k) + k;
+    Assume n-k=0 ==> n=k;
+    T(n) = T(n-n)+n;
+    T(n) = T(0)+n;
+    T(n) = 1+n;  -----T(0) = 1 --> in above Recurence Relation;
+
+NEXT QUESTION :
+void test(int n){             --------- T(n)
+    if(n>0){                  --------- 1
+        for(int i=0;i<n;i++){ --------- n+1
+            printf("%d",n);   --------- n
+        }
+        test(n-1);            --------- T(n-1)
+    }
+} 
+______________________________________________
+ T(n) = T(n-1) + 2n + 2
+ ==> T(n) = T(n-1) + n;
+  Recurence Relation ==>
+        T(n) = {
+            1, n=0
+            T(n-1)+n, n>0
+        }
+
+    Tracing Tree ==>
+        T(n)  ----- n 
+        /\ 
+       n  T(n-1) ---- n-1
+           /  \
+        n-1    T(n-2) ---- n-2
+                /  \ 
+               n-2 T(n-3)  ---- n-3 amd so on to 0;
+    so T(n) = (0+1+2+3+.....n-2+n-1+n) 
+    T(n) = n(n+1)/2
+    ==>Time Complexity = O(n^2)
+
+    Substituion Method:
+        T(n) = T(n-1) + n;
+        T(n-1) = T(n-2) + (n-1);
+        T(n-2) = T(n-3) + (n-2);
+
+        T(n) = T(n-1) + n;
+        Substitute T(n-1) to k times , we get:
+        T(n) = T(n-k)+(n-(k-1))+(n-(k-2))+..........+(n-1)+n;
+
+        Assume n-k=0 ==> n==k;
+        T(n) = T(n-n) + 1+2+3....n
+        T(n) = T(0) + n(n+1)/2
+        T(n) = 1+ n(n+1)/2;
+
+MASTER ThEOREM:
+    if your fxn. of the type:
+    T(n) = aT(n/b) + f(n);
+    then only we can apply Master Theorem;
+     case 1:
+        a>=1, b>=1;  f(n) = O(n^(log(b)(a) -E)) --- E is epsilon,b is base
+                    for some epsilon > 0
+
+        T(n) = 9T(n/3)+n;
+        a=9,b=3;
+        f(n)= n 
+
+        O(n^(log(3)(9)-E))
+        O(n^(2-E))
+        O(n^(1)) --- ASSUME E AS 1
+        f(n) = O(n)
+
+        T(n) = O(n^(log(b)(a))) --- complexity if f(n) is satisfied
+
+    Case 2:
+        T(n) = aT(n/b) + f(n)
+        if, f(n) = O(n^(log(b)(a))
+        then:
+            O(n) = O(n^(log(b)(a))*log(n)) ---- Time Complexity
+            Example:
+            T(n) = T(2n/3)+1;
+            a=1;
+            b = 3/2 ;
+            f(n) = O(n^(log(3/2)(1)))
+            f(n) = O(n^0)
+            f(n) = O(1); ===> f(n) = 1; 
+
+            T(n) = 1*log(n);
+            O(logn);
+
+    Case 3:
+        T(n) = aT(n/b)+f(n);
+        a>=1,b>1
+        if, f(n) = o(n^(log(b)(a))+E) -- for some E>0
+        AND , af(n/b) <= c.f(n) --- for some c<1 for all n;(c is constant)
+        then,
+            O(n) = O(f(n))
+
+        Example:
+        T(n) = 3T(n/4)+nlog(n);
+        a=3,b=4;
+        f(n)=n.log(n);
+        f(n) = o(n^(log(4)(3)+E))
+        f(n) = o(n^1) -- calculated
+        AND, a.f(n/b) = (3/4)*((nlog(n))/4)
+             c.f(n) =  (3/4)*((nlog(n))/4)  ==> c = 3/4
+
+        therefore O(n) = n.log(n);

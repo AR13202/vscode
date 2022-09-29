@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+.q {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: dodgerblue;
+}
+
+.a:hover {
+    transform: scale(2, 3) translate(40%, 40%);
+}
+
+.b:hover {
+    transform: rotate(20deg);
+}
+
+.c:hover {
+    transform: translate(10%, 10%);
+}
+
+.d:hover {
+    transform: skew(20deg);
+}
