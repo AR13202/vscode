@@ -1,0 +1,52 @@
+{
+    "env": {
+        "myDefaultIncludePath": [
+            "${workspaceFolder}",
+            "${workspaceFolder}/include"
+        ],
+        "myCompilerPath": "C:/msys64/mingw64/bin/gcc.exe"
+    },
+    "configurations": [
+        {
+            "name": "include paths",
+            "intelliSenseMode": "${default}",
+            "includePath": [
+
+                "C:/msys64/mingw64/include/gtk-3.0",
+                "C:/msys64/mingw64/include/at-spi2-atk/2.0",
+                "C:/msys64/mingw64/include/at-spi-2.0",
+                "C:/msys64/mingw64/include/dbus-1.0",
+                "C:/msys64/mingw64/lib/x86_64-linux-gnu/dbus-1.0/include",
+                "C:/msys64/mingw64/include/gio-unix-2.0",
+                "C:/msys64/mingw64/include/cairo",
+                "C:/msys64/mingw64/include/libdrm",
+                "C:/msys64/mingw64/include/pango-1.0",
+                "C:/msys64/mingw64/include/harfbuzz",
+                "C:/msys64/mingw64/include/pango-1.0/pango",
+                "C:/msys64/mingw64/include/fribidi",
+                "C:/msys64/mingw64/include/atk-1.0",
+                "C:/msys64/mingw64/include/cairo",
+                "C:/msys64/mingw64/include/pixman-1",
+                "C:/msys64/mingw64/include/freetype2",
+                "C:/msys64/mingw64/include/libpng16",
+                "C:/msys64/mingw64/include/gdk-pixbuf-2.0",
+                "C:/msys64/mingw64/include/libmount",
+                "C:/msys64/mingw64/include/blkid",
+                "C:/msys64/mingw64/include/uuid",
+                "C:/msys64/mingw64/include/glib-2.0",
+                "C:/msys64/mingw64/lib/x86_64-linux-gnu/glib-2.0/include"
+            ],
+            "compilerPath": "C:/msys64/mingw64/bin/gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
+        }
+    ],
+    "version": 4
+}

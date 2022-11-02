@@ -16,7 +16,6 @@ class TreeNode {
         }
     }
 };
-
 TreeNode<int>* takeInput(){
     int rootdata;
     cout << "Enter Data: " << endl;
