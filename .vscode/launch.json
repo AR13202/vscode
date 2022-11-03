@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch infixtopostfix",
+            "request": "launch",
+            "mainClass": "infixtopostfix",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch strings",
+            "request": "launch",
+            "mainClass": "strings",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch matrix",
+            "request": "launch",
+            "mainClass": "matrix",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array",
+            "request": "launch",
+            "mainClass": "Array",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
             "name": "Launch balancedparenthesis",
             "request": "launch",
             "mainClass": "balancedparenthesis",

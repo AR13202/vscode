@@ -17,13 +17,11 @@ public class balancedparenthesis{
                 if (check == '{' || check == '[')
                     return false;
                 break;
- 
             case '}':
                 check = stack.pop();
                 if (check == '(' || check == '[')
                     return false;
                 break;
- 
             case ']':
                 check = stack.pop();
                 if (check == '(' || check == '{')

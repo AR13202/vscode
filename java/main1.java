@@ -1,6 +1,6 @@
 import java.util.Iterator;
 import java.util.*;
-public class main{
+public class main1{
     public static void main(String[] args) {
         // ArrayList<String> cars = new ArrayList<String>();
         // cars.add("Volvo");
@@ -26,7 +26,7 @@ public class main{
         System.out.println(st);
         System.out.println(st.element());
         System.out.println(st.peek());
-        Iterator it = st.iterator();
+        Iterator<Integer> it = st.iterator();
         while(it.hasNext()){
             System.out.println(it.next());
         }

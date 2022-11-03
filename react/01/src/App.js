@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { CardList } from './components/card-list/card-list.component';
+//import { CardList } from './components/card-list/card-list.component';
 import './App.css';
 
 class App extends Component {
@@ -51,15 +51,15 @@ class App extends Component {
         </CardList> */}
         <div>
           <form>
-            <input id='asd' onChange={(event)=>this.change(event)}/>
-            <input id='asdf' onChange={(event)=>this.change1(event)}/>
-            <input id='asdg' onChange={(event)=>this.change2(event)}/>
+            <input id='asd' placeholder='name' onChange={(event)=>this.change(event)}/><br/>
+            <input id='asdf' placeholder='gender' onChange={(event)=>this.change1(event)}/><br />
+            <input id='asdg' placeholder='address' onChange={(event)=>this.change2(event)}/><br/>
             <button onClick={(e)=>this.isSubmit(e)}>submit</button>
           </form>
           {this.state.qwe?<h2>
-            {this.state.asd}
-            {this.state.asdf}
-            {this.state.asdg}
+            {this.state.asd}<br />
+            {this.state.asdf}<br />
+            {this.state.asdg}<br/>
           </h2>:null}
           </div>
       </div>
