@@ -3,10 +3,12 @@
     "development"
   ],
   "hints": {
-    "axe/text-alternatives": [
+    "compat-api/css": [
       "default",
       {
-        "image-alt": "off"
+        "ignore": [
+          "-webkit-tap-highlight-color"
+        ]
       }
     ]
   }

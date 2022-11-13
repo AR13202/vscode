@@ -1,0 +1,33 @@
+.stories-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 80%;
+}
+.st-grid{
+    width: 26vh;
+    height: 50vh;
+    margin: auto;
+    font-family: Calibri;
+    width: 90%;
+}
+.st-cont{
+    padding: 2vh;
+    height: 30vh;
+}
+.st-cont h2{
+    font-size: 35px;
+}
+.st-cont span{
+    font-size: 12px;
+}
+.more-st{
+    margin: auto;
+    width: 80%;
+    margin-top: 5vh;
+    font-size: 25px;
+    font-family: Calibri;
+}
+.more-st img{
+    margin-left: 1vh;
+}

@@ -1,0 +1,14 @@
+.header{
+    margin: auto;
+    width: 80%;
+    font-size: 15vh;
+    text-align: center;
+    font-family: Calibri;
+}
+.head1{
+    position: absolute;
+    top: 6vh;
+    left: 70vh;
+    transform: rotate(-90deg);
+    font-size: 6.5vh;
+}

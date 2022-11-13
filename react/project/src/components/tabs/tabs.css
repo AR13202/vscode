@@ -1,0 +1,14 @@
+.tabs{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    font-size: 3vh;
+    font-family: Calibri;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+.tab-grid{
+    padding-top: 2vh;
+}
+.hr{
+    width: 80%;
+}

@@ -1,0 +1,142 @@
+.articles{
+    display: grid;
+    margin: auto;
+    width: 80%;
+    grid-template-columns: 60% 35%;
+    column-gap: 2vh;
+}
+.art-grid{
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Calibri;
+    height: auto;
+    row-gap: 8vh;
+}
+.one-grid-img{
+    background: url(./Assets//andrea-ledda-4EwI7yI5Q_8-unsplash.jpg);
+    background-size: cover;
+    border-radius: 4px;
+}
+.one-grid{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin: auto;
+    width: 100%;
+    height: 25vh;
+}
+.one-grid-cont{
+    padding: 20px;
+    width: 70%;
+}
+.one-grid-cont div{
+    font-size: 30px;
+}
+.one-grid-cont p{
+    font-size: 17px;
+    color: #908D8D;
+}
+.one-grid-cont span{
+    color: #404040;
+    font-size: 12px;
+}
+.one-grid-more{
+    height: 5vh;
+    font-size: 25px;
+    margin-top: 5vh;
+}
+.two-grid{
+    margin-top: 5vh;
+    background: url(./Assets/renato-pozzi-G4oGYy_ZcsQ-unsplash.jpg);
+    background-size: cover;
+    height: 60vh;
+    border-radius: 5px;
+}
+.art-grid2{
+    display: grid;
+    grid-template-columns: auto;
+    margin: auto;
+    width: 100%;
+}
+.three-grid{
+    height: 115vh;
+    border: 2px solid black;
+    margin-bottom: 5vh;
+}
+.three-grid div{
+    margin-top: 50vh;
+    margin-left: 15vh;
+    font-size: 30px;
+    font-family: Calibri;
+}
+.four-grid{
+    height: 110vh;
+    display: grid;
+    grid-template-columns: auto;
+    font-family: Calibri;
+}
+.four-head{
+    margin-top: 20px;
+    width: 80%;
+    font-family: Calibri;
+    height: 10vh;
+    font-size: 45px;
+    margin-bottom: 2vh;
+}
+.four-hr{
+    margin-top: 10px;
+    margin-left:10px;
+    width:25%;
+    height: 0.5vh;
+    background-color: orange;
+}
+.four-grid-one{
+    height: 40vh;
+    display: grid;
+    grid-template-columns: auto;
+}
+.four-one-img{
+    background: url(./Assets/renato-pozzi-G4oGYy_ZcsQ-unsplash.jpg);
+    background-size: cover;
+    height: 20vh;
+    width: 100%;
+}
+.four-one-grid{
+    display: grid;
+    height: 30vh;
+    grid-template-columns: 70% 30%;
+}
+.four-one-cont{
+    margin-left: 2vh;
+    font-size: 25px;
+}
+.four-one-cont span{
+    font-size: 12px;
+}
+.four-num{
+    font-size: 60px;
+    margin: auto;
+    color: #908D8D;
+}
+.four-one-num{
+    font-size: 60px;
+    margin: auto;
+    margin-top: 5vh;
+    color: #908D8D;
+}
+.four-grid-two{
+    height: 18vh;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+}
+.four-two-img{
+    margin: 2vh;
+    background: url(./Assets/tj-holowaychuk-1EYMue_AwDw-unsplash.jpg);
+    background-size: cover;
+    border-radius: 2px;
+}
+.four-two-cont{
+    font-size: 20px;
+}
+.four-two-cont span{
+    font-size: 10px;
+}

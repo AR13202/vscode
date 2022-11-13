@@ -1,0 +1,27 @@
+.App{
+    display: grid;
+    grid-template-columns: auto;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+}
+.grid-head{
+    height: 18vh;
+}
+.grid-tab{
+    height: 10vh;
+}
+.grid-main{
+    height: 65vh;
+}
+.grid-latest{
+    height: 80vh;
+}
+.grid-content{
+    height: 250vh;
+}
+.grid-stories{
+    height: 80vh;
+}

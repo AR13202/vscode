@@ -1,0 +1,33 @@
+.main{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    margin: auto;
+    column-gap: 1vh;
+    grid-template-columns: 70% 30%;
+}
+.main-grid{
+    background-color: antiquewhite;
+    height: 62vh;
+    border-radius: 7px;
+    text-align: center;
+    background-image: url(./Assets/download.webp);
+    background-size: cover;
+}
+.sub-grid{
+    height: 62vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sub{
+    flex: 100%;
+    background-color: beige;
+    height: 30vh;
+    text-align: center;
+    border-radius: 7px;
+    background-image: url(./Assets/03.jpg);
+    background-size: cover;
+}
+.bottom{
+    margin-bottom: 1vh;
+}

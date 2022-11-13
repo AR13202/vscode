@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch smithnumber",
+            "request": "launch",
+            "mainClass": "smithnumber",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch gcd",
+            "request": "launch",
+            "mainClass": "gcd",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch primefactors",
+            "request": "launch",
+            "mainClass": "primefactors",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch q2",
+            "request": "launch",
+            "mainClass": "q2",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch string",
+            "request": "launch",
+            "mainClass": "string",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch q",
+            "request": "launch",
+            "mainClass": "q",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
             "name": "Launch infixtopostfix",
             "request": "launch",
             "mainClass": "infixtopostfix",

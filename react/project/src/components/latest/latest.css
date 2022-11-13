@@ -1,0 +1,44 @@
+.latest-head{
+    margin: auto;
+    width: 80%;
+    font-family: Calibri;
+    height: 10vh;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+.latest-hr{
+    margin-top: 10px;
+    width:8%;
+    height: 0.5vh;
+    background-color: orange;
+}
+.latest-grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: auto;
+    width: 80%;
+}
+.grid{
+    width: 26vh;
+    height: 65vh;
+    margin: auto;
+    font-family: Calibri;
+    width: 90%;
+    border-radius: 10px;
+}
+.grid-img{
+    height: 25vh;
+    background-image: url(./Assets/01.jpg);
+    background-size: cover;
+}
+.grid-cont{
+    padding: 2vh;
+    padding-top: 0vh;
+    height: 30vh;
+}
+.grid-cont h2{
+    font-size: 35px;
+}
+.grid-cont span{
+    font-size: 12px;
+}
