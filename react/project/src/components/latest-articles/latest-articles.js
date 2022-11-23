@@ -42,7 +42,6 @@ const Articles = () =>{
                 </div>
                 <div className='one-grid'>
                     <div className='one-grid-img'>
-
                     </div>
                     <div className='one-grid-cont'>
                         <div>

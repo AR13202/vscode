@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch mergesort",
+            "request": "launch",
+            "mainClass": "mergesort",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch quicksort",
+            "request": "launch",
+            "mainClass": "quicksort",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch selectionsort",
+            "request": "launch",
+            "mainClass": "selectionsort",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
+            "name": "Launch insertionsort",
+            "request": "launch",
+            "mainClass": "insertionsort",
+            "projectName": "vscode_db31914b"
+        },
+        {
+            "type": "java",
             "name": "Launch smithnumber",
             "request": "launch",
             "mainClass": "smithnumber",
