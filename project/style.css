@@ -74,6 +74,7 @@
     left: 0;
     width: 100%;
     padding-top: 30px;
+    margin: auto;
 }
 .about-head{
     font-family: 'Consolas';
@@ -120,7 +121,7 @@
 }
 .grid-content{
     margin: 0px 0px 13.5px 0px;
-    font-size: 20px;
+    font-size: 17px;
     font-family: Sans-serif;
     color: #555555;
 }
@@ -168,8 +169,83 @@
     font-size: 20px;
 }
 .contact {
-    background-color: #f1f1f1;
-    padding: 10px;
     flex: 100%;
-    height: 100vh;
+    text-align: center;
+    height: 70vh;
+    background-color: black;
+}
+.contactus{
+    background-color: white;
+    padding: 10vh;
+    height: 30%;
+    border-radius: 0% 0% 120px 120px;
+}
+.contact div p{
+    margin: auto;
+    padding: 30px;
+    font-family: calibri;
+    font-size: 60px;
+    width: 60%;
+    text-align: center;
+}
+.contact div a{
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    font-size: 30px;
+    margin: auto;
+    padding: 10px;
+    font-family: calibri;
+    width: 20%;
+    text-decoration: none;
+}
+.contact a:hover{
+    background-color: grey;
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 30px;
+    margin: auto;
+    height: auto;
+    color: white;
+    font-family: calibri;
+}
+.footer-grid{
+    text-align: left;
+}
+.info{
+    margin-left: 10vh;
+    width: 100%
+}
+.info-name{
+    width: 100%;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.line{
+    width: 300px;
+    background-color: white;
+    height: 1px;
+}
+.footer-cont{
+    margin-top: 20px;
+}
+.Cont-us{
+    padding-top: 20px;
+}
+.cont-name{
+    font-size: 25px;
+}
+.line2{
+    width: 100px;
+    background-color: white;
+    height: 1px;
+}
+.footer-cont2{
+    margin-top: 10px;
+    font-size: 17.5px;
+}
+.footer-cont2 i{
+    margin-right: 7px;
 }

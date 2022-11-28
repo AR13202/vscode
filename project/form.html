@@ -7,6 +7,7 @@
         </title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="form.css">
+        <script src="https://kit.fontawesome.com/502372958b.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div class="form-div">
@@ -15,52 +16,38 @@
                     <div class="contact-header">
                         <h1>Let's get in touch</h1>
                         <span>
-                            We're open for any suggestion or just to <br>
-                            have a chat
+                            We're open for any suggestion.
                         </span>
                     </div>
                     <div class="contact-content">
                         <div class="content">
                             <div class="content-icon">
-                                <div class="image-tag">
-                                <img alt="" src="https://img.icons8.com/ios/50/null/visit.png"/>
-                                </div>
+                                <i class="fa-solid fa-location-crosshairs fa-2x"></i>                
                             </div>
                             <div class="content-discription">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae facere quam excepturi vel?
+                                Lorem ipsum dolor, sit amet consectetur adipisicing.
                             </div>
                         </div>
                         <div class="content">
-                            <div class="content-icon">
-                                <div class="image-tag">
-                                <img alt="" src="https://img.icons8.com/ios/50/null/ringer-volume.png"/>
-                                </div>
+                            <div class="content-icon">     
+                                <i class="fa-solid fa-phone fa-2x"></i>  
                             </div>
                             <div class="content-discription">
-                                <br>
                                 Phone:  +61-xxxx-23234
                             </div>
                         </div>
                         <div class="content">
                             <div class="content-icon">
-                                <div class="image-tag">
-                                <img alt="" src="https://img.icons8.com/ios/50/null/secured-letter--v1.png"/>
-                                </div>
+                                <i class="fa-solid fa-envelope fa-2x"></i>                                
                             </div>
                             <div class="content-discription">
-                                <br>
                                 Email: xyz.company@gmail.com
                             </div>
                         </div>
                         <div class="content">
-                            <div class="content-icon">
-                                <div class="image-tag">
-                                <img alt="" src="https://img.icons8.com/ios/50/null/internet--v1.png"/>
-                                </div>
+                            <div class="content-icon"> 
                             </div>
                             <div class="content-discription">
-                                <br>
-                                Website: www.xyzcompany.com
                             </div>
                         </div>                        
                     </div>
@@ -70,18 +57,18 @@
                         <h1>Get in Touch</h1>
                     </div>
                     <div class="form">
-                        <form>
-                            <input type="text" class="form-control form-control-lg" placeholder="Name">
-                            <input type="email" class="form-control mt-3" placeholder="Email">
-                            <input type="text" class="form-control mt-3" placeholder="Subject">
-                            <input type="text" class="form-control mt-3" placeholder="Organization Name">
-                            <div class="mb-3 mt-3">
-                                <textarea class="form-control" rows="5" id="comment" name="text" placeholder="Project Details"></textarea>
-                            </div>
-                            <input type="submit" class="btn btn-success mt-3">
+                        <form action="https://formsubmit.co/el/kemido" method="POST">
+                            <input name="name" type="text" class="form-control form-control-lg" placeholder="Name">
+                            <input name="email" type="email" class="form-control mt-3" placeholder="Email">
+                            <input name="subject" type="text" class="form-control mt-3" placeholder="Subject">
+                            <textarea name="message" class="form-control mt-3" rows="5" id="comment" placeholder="Project Details"></textarea>
+                            <button type="submit" class="btn btn-primary mt-3">Submit</button>
                         </form>
                     </div>
                 </div>
+            </div>
+            <div class="back-button">
+                <a href="./index.html">Return to Home Page</a>
             </div>
         </div>
     </body>
