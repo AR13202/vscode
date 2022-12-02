@@ -1,3 +1,6 @@
+.body{
+    overflow-x: hidden;
+}
 .flex-container {
     position:absolute;
     display: flex;
@@ -97,6 +100,10 @@
     color: #555555;
     font-size: 20px;
     padding-bottom: 40px;
+}
+.image{
+    width: 100;
+    height: 100;
 }
 .grid-container{
     justify-content: center;
@@ -248,4 +255,236 @@
 }
 .footer-cont2 i{
     margin-right: 7px;
+}
+@media all and (max-width:770px){
+    .header{
+        text-align: center;
+        height: 70px;
+        padding: 10px;
+        padding-left: 15px;
+        position: relative;
+        background-color: black;
+    }
+    .header-title{
+        float: none;
+    }
+    .header-list{
+        padding: 10px;
+        float: none;
+    }
+    .header-list a{
+        float: none;
+    }
+    hr{
+        visibility: hidden;
+    }
+    .home{
+        width: auto;
+        padding: 3px;
+        height: 60vh;  
+    }
+    .home-text{
+        width: auto;
+        left: 0;
+        margin-top: 100px;
+        color: black;
+        text-align: center;
+    }
+    .home-text-title{
+        font-size: 50px;
+    }
+    .home-text-body{
+        font-size: 15px;
+        color: black;
+        margin: auto;
+        width: 60%;
+    }
+    .about{
+        width: auto;
+        height: 200vh;
+    }
+    .about-flex{
+        width: auto;
+        text-align: left;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .grid{
+        width: 300px;
+        padding: 5px;
+    }
+    .grid-head{
+        font-size: 30px;
+    }
+    .grid-content{
+        font-size: 15px;
+    }
+    .image{
+        width: 70;
+        height: 70;
+    }
+    .services{
+        width: auto;
+        height: 200vh;
+    }
+    .serivces-head{
+        font-size: 40px;
+    }
+    .serivces-grid{
+        grid-template-columns: auto;
+        height: 55vh;
+    }
+    .ser-grid{
+        font-size: 35px;
+    }
+    .ser-hr{
+        height: 0.5vh;
+        margin: auto;
+        width: 30%;
+    }
+    .ser-grid-cont{
+        text-align: center;
+    }
+    .contact{
+        height: 100vh;
+    }
+    .contactus{
+        padding: 5vh;
+        height: 27%;
+    }
+    .contact div p{
+        font-size: 35px;
+    }
+    .contact div a{
+        font-size: 20px;
+    }
+    .footer{
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 15px;
+    }
+    .info{
+        margin-left: 0vh;
+        font-size: 25px;
+    }
+    .footer-cont{
+        font-size: 20px;
+    }
+}
+@media all and (max-width:550px){
+    .header{
+        height: 50px;
+    }
+    .header-title{
+        font-size: 20px;
+    }
+    .header-list{
+        padding: 5px;
+    }
+    .header-list a{
+        font-size: 15px;
+        padding-right: 2px;
+    }
+    .home{
+        height: 50vh;
+    }
+    .home-text-title{
+        font-size: 35px;
+    }
+    .home-text-body{
+        font-size: 15px;
+        width: 80%
+    }
+    .about{
+        height: 150vh;
+    }
+    .about-content{
+        margin-bottom: 10px;
+    }
+    .about-head{
+        font-size: 40px;
+        margin: 10px 0px 5px 0px;
+    }
+    .about-container{
+        font-size: 15px;
+        width: 90%;
+        padding-bottom: 10px;
+    }
+    .grid-container{
+        grid-template-columns: auto;
+    }
+    .grid{
+        width: 300px;
+        padding: 5px;
+        height: 250px;
+    }
+    .grid-head{
+        font-size: 25px;
+    }
+    .grid-content{
+        font-size: 15px;
+    }
+    .image{
+        width: 30;
+        height: 30;
+    }
+    .services{
+        width: auto;
+        height: 160vh;
+    }
+    .serivces-head{
+        font-size: 24px;
+    }
+    .serivces-grid{
+        grid-template-columns: auto;
+        height: 40vh;
+    }
+    .ser-grid{
+        font-size: 25px;
+    }
+    .ser-hr{
+        height: 0.5vh;
+        margin: auto;
+        width: 30%;
+    }
+    .ser-grid-cont{
+        text-align: center;
+        font-size: 15px;
+        width: 80%;
+    }
+    .contact{
+        height: 100vh;
+    }
+    .contactus{
+        padding: 5vh;
+        height: 27%;
+    }
+    .contact div p{
+        font-size: 25px;
+    }
+    .contact div a{
+        font-size: 15px;
+    }
+    .footer{
+        grid-template-columns: auto;
+        justify-content: center;
+        padding: 15px;
+    }
+    .info{
+        margin-left: 0vh;
+        font-size: 20px;
+    }
+    .line{
+        width: 40%;
+    }
+    .cont-name{
+        font-size: 20px;
+    }
+    .footer-cont2{
+        font-size: 15px;
+    }
+    .footer-cont{
+        font-size: 15px;
+    }
 }
