@@ -1,0 +1,57 @@
+<html lang="en">
+    <head>
+        <title>slideshow</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body onLoad="slider()">
+        <div class="banner">
+            <div class="slider">
+                <img alt="" src="" id="slideImg">
+            </div>
+            <div class="overlay">
+                <div class="navbar">
+                    <div class="logo">
+                        
+                    </div>
+                    <div class="menu-icons">
+                        <img alt="" src="./assets/01.png">
+                        <img alt="" src="./assets/02.png">
+                        <img alt="" src="./assets/03.png">
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>LANDING PAGE</h1>
+                    <h3>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea non quisquam qui ipsam voluptatibus expedita! Neque, deserunt? Rerum possimus quidem ducimus in quibusdam. Ut molestiae blanditiis tempore deleniti at totam!
+                    </h3>
+                    <div>
+                        <button type="button">Watch More</button>
+                        <button type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var slideImg = document.getElementById("slideImg");
+            var images = new Array(
+                "./assets/bg01.jpg",
+                "./assets/bg02.jpg",
+                "./assets/bg03.jpg",
+                "./assets/bg05.jpg",
+                "./assets/bg06.jpg",
+            );
+            var len = images.length;
+            var i=0;
+            function slider(){
+                if(i > len-1){
+                    i = 0;
+                }
+                slideImg.src = images[i];
+                i++;
+                setTimeout('slider()',5000);
+            }
+        </script>
+    </body>
+</html>

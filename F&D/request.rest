@@ -1,0 +1,41 @@
+# GET http://localhost:3000
+
+
+# ###
+
+# POST http://localhost:3000/register
+# Content-Type: application/json
+
+# {
+#     "myId":"user101",
+#     "pwd":"@Divya99"
+# }
+
+# ###
+# GET http://localhost:3000/register
+
+# ###
+# POST http://localhost:3000/login
+# Content-Type: application/json
+
+# {
+#     "myId":"user101",
+#     "pwd":"@Divya99"
+# }
+
+
+GET http://localhost:3000/blogs
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6InRvbnkiLCJpYXQiOjE2NzExNjc1MzF9.Pis7PKHk6sR83Y5UuoKqr3NH1xMznYbdfYBhGxfCauY
+
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "id":"tony"
+}
+
+
+
+
