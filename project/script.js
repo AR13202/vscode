@@ -8,22 +8,20 @@ window.onscroll = function() {
         document.getElementsByClassName("header")[0].classList.remove(className);
     }
 };
-let slideIndex = 0;
-showSlides();
-
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
+var slideImg = document.getElementById("slideImg");
+var images = new Array(
+    "./assets/bg01.jpg",
+    "./assets/bg02.jpg",
+    "./assets/bg03.jpg",
+    "./assets/bg04.jpg",
+);
+var len = images.length;
+var i=0;
+function slider(){
+    if(i > len-1){
+        i = 0;
     }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    slideImg.src = images[i];
+    i++;
+    setTimeout('slider()',5000);
 }

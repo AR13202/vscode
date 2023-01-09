@@ -8,32 +8,35 @@
         <link rel="stylesheet" href="style.css">
         <script src="https://kit.fontawesome.com/4900892dea.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body onload="slider()">
         <div class="flex-container">
             <div class="header">
                 <div class="header-title">
                     Landing Page
                 </div>
                 <div class="header-list">
+                    <a href="#ho">Home</a>
                     <a href="#ab">About</a>
                     <a href="#sr">Services</a>
                     <a href="#co">Contact</a>
                 </div> 
             </div>
-            <div class="home">
-                <div class="home-text">
-                    <div class="home-text-title">
-                        Landing Page
-                    </div>
-                    <hr>
-                    <div class="home-text-body">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Dolorum consequuntur quos nulla autem, iusto 
+            <div class="banner" id="ho">
+                <div class="slider">
+                    <img alt="" src="" id="slideImg">
+                </div>
+                <div class="overlay">
+                    <div class="content">
+                        <h1>LANDING PAGE</h1>
+                        <hr>
+                        <h3>
+                            <i>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea non quisquam qui ipsam voluptatibus expedita! Neque, deserunt? Rerum possimus quidem ducimus in quibusdam. Ut molestiae blanditiis tempore deleniti at totam!</i>
+                        </h3>
                     </div>
                 </div>
             </div>
             <div class="about" id="ab">
-                <div class="about-flex">
+                <!-- <div class="about-flex">
                     <h2 class="about-head">
                         About Us
                     </h2>
@@ -90,10 +93,84 @@
                             </p>
                         </div>
                     </div>
+                </div> -->
+                <div class="about-grid">
+                    <div class="about-us">
+                        <div class="about-head">
+                           <i> About Us</i>
+                        </div>
+                        <div class="about-hr"></div>
+                        <div class="about-contain">
+                            Xx is a multifaceted sustainability advisory company focusing on helping and 
+                            educating the building industry to strive towards sustainability. Established 
+                            in 2022, xx is structured around the Sustainable Development Goals (SDGs) and 
+                            is focused on delivering a sustainable future.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br>
+                            <b><a>know more...</a></b>.
+                        </div>
+                        <div class="about-container">
+                            <div class="ac ab1">
+                                <div class="ab-logo">
+                                    <img  class="image" src="./assets/goal.png">
+                                    <div class="ab-content">
+                                        <div class="text">
+                                            Delivering value driven cost effective sustainable solutions for the future communities.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-head">
+                                    <p>
+                                        <b>Mission</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ac ab2">
+                                <div class="ab-logo">
+                                    <img class="image"  src="./assets/visionary.png">
+                                    <div class="ab-content">
+                                        <div class="text"> 
+                                            Making Sustainability Easy. Our aim is to make the transition towards sustainability an easy process
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-head">
+                                    <p>
+                                        <b>Vision</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ac ab3">
+                                <div class="ab-logo">
+                                    <img class="image"  src="./assets/question.png">
+                                    <div class="ab-content">
+                                        <div class="text"> 
+                                            With an integration of different backgrounds in engineering, architecture and design xx forms a perfect combination to help our clients align with the purpose of attaining sustainable outcomes. 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ab-head">
+                                    <p>
+                                        <b>Why Us?</b>
+                                    </p>     
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img">
+                        
+                    </div>
                 </div>
             </div>
             <div class="services" id="sr">
-                <h2 class="services-head">
+                <!-- <h2 class="services-head">
                     Services
                 </h2>
                 <div class="serivces-flex">
@@ -137,12 +214,64 @@
                             
                         </div>
                     </div>
+                </div> -->
+                <div class="services-head">
+                    <i>Our Services</i>
+                </div>
+                <div class="services-head-hr"></div>
+                <div class="services-container">
+                    <div class="services-grid">
+                        <div class="grid-img ga"></div>
+                        <div class="grid-head">
+                            Compliance
+                        </div>
+                        <div class="grid-hr"></div>
+                        <div class="grid-content">
+                            <b>Commercial</b><br>
+                            Section J (Deemed-to-Satisfy)<br>
+                            Performance Solution (JV3) and thermal comfort assessment<br>
+                            <br>
+                            <b>Residential</b><br>
+                            Part 3.12 (Deemed-to-Satisfy)<br>
+                            Star Rating (NatHERS)<br>
+                            Verification method (V.2.6.2.2) modelling<br>
+                            BASIX
+                        </div>
+                    </div>
+                    <div class="services-grid">
+                        <div class="grid-img gb"></div>
+                        <div class="grid-head">
+                            Day Lighting
+                        </div>
+                        <div class="grid-hr"></div>
+                        <div class="grid-content">
+                            The term “daylighting” refers to architectural design that allows natural light into 
+                            buildings. Daylighting provides many benefits, including increased productivity, 
+                            enhanced connection to the outdoors, improved health, and energy savings.
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </div>
+                    </div>
+                    <div class="services-grid">
+                        <div class="grid-img gc"></div>
+                        <div class="grid-head">
+                            Design Advisory
+                        </div>
+                        <div class="grid-hr"></div>
+                        <div class="grid-content">
+                            Our design advisory services provide consultancy in early stages of the design and make 
+                            the processes easy to achieve an energy efficient building design.
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="contact" id="co">
                 <div class="contactus">
                     <p>Have Some Questions ?</p>
-                    <a href="./form.html">Get in Touch</a>
+                    <a href="./form.html" target="blank">Get in Touch</a>
                 </div>
                 <div class="footer">
                     <div class="footer-grid info">
