@@ -1,0 +1,24 @@
+GET http://localhost:3000
+
+
+###
+
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "myId":"user101",
+    "pwd":"@Divya99"
+}
+
+###
+GET http://localhost:3000/register
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "myId":"user101",
+    "pwd":"@Divya99"
+}
